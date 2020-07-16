@@ -3,10 +3,14 @@ import { FaCode } from "react-icons/fa";
 import { Card, Avatar, Col, Typography, Row } from 'antd';
 import axios from 'axios';
 import moment from 'moment';
+import MainImage from './MainImage/MainImage';
+
 const { Title } = Typography;
 const { Meta } = Card;
+
 function LandingPage() {
 
+    // Get Videos
     const [Videos, setVideos] = useState([])
 
     useEffect(() => {
@@ -21,10 +25,7 @@ function LandingPage() {
             })
     }, [])
 
-
-
-
-
+    // Display Videos
     const renderCards = Videos.map((video, index) => {
 
         var minutes = Math.floor(video.duration / 60);
@@ -59,7 +60,9 @@ function LandingPage() {
 
 
     return (
+
         <div style={{ width: '85%', margin: '3rem auto' }}>
+            <MainImage />
             <Title level={2} > Recommended </Title>
             <hr />
 

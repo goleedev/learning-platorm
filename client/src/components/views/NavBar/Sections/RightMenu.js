@@ -34,6 +34,9 @@ function RightMenu(props) {
   } else {
     return (
       <Menu mode={props.mode}>
+        <Menu.Item key="subscription">
+          <a href="/subscription">Video</a>
+        </Menu.Item>
         <Menu.Item key="create">
           <a href="/video/upload"><img src={Upload} alt="Upload" /></a>
         </Menu.Item>

@@ -1,0 +1,65 @@
+.main__background {
+    width: 80%;
+    position: relative;
+    top: -150px;
+    left: 25%;
+}
+
+.main__person {
+    position: absolute;
+    left: 66%;
+    top: 37%;
+    width: 300px;
+    animation: swing 3s ease infinite;
+}
+
+.main__title {
+    position: absolute;
+    width: 40%;
+    font-size: 6rem !important;
+    font-family: "Mark Pro Heavy";
+    left: 10%;
+    top: 35%;
+    animation: slide-in 1s ease;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% { 
+        transform: translateX(0%); 
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%); 
+    }
+}
+
+@keyframes swing {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(-3deg);
+    }
+    50% {
+        transform: rotateZ(3deg);
+    }
+    75% {
+        transform: rotateZ(-3deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+
+}

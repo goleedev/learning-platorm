@@ -1,0 +1,11 @@
+html {
+    scroll-behavior:smooth
+}
+::-moz-selection {
+    background: #E3B839 !important;
+    color: #444452 !important;
+}
+::selection {
+    background: #E3B839 !important;
+    color: #444452 !important;
+}
