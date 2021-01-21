@@ -30,7 +30,7 @@
     "passport-kakao": "^1.0.0",
     "passport-twitter": "^1.0.4",
     "react-redux": "^7.2.0",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.4.0"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
